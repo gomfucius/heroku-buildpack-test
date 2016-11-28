@@ -5,7 +5,7 @@ set -o pipefail
 
 # 1- Configuration
 ###mkdir /staging && cd /staging
-apt-get build-dep --assume-yes curl
+#apt-get build-dep --assume-yes curl
 
 # 2- Install libnghhtp2
 git clone https://github.com/nghttp2/nghttp2
