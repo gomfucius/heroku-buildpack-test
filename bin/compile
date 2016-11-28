@@ -2,13 +2,14 @@
 
 set -e
 set -o pipefail
+echo "Hi dayo"
 
 # 1- Configuration
-mkdir /staging && cd /staging
-chmod 0755 /staging
-echo “Hi dayo:
+#mkdir /staging && cd /staging
 
 #apt-get build-dep --assume-yes curl
+
+cd /tmp
 
 # 2- Install libnghhtp2
 git clone https://github.com/nghttp2/nghttp2
