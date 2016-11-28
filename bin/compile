@@ -1,15 +1,17 @@
 #!/bin/bash
 
+BUILD_DIR=$1
+cd $BUILD_DIR
+
 set -e
 set -o pipefail
 echo "Hi dayo"
 
 # 1- Configuration
-#mkdir /staging && cd /staging
+mkdir /staging && cd /staging
 
-#apt-get build-dep --assume-yes curl
+apt-get build-dep --assume-yes curl
 
-cd /tmp
 
 # 2- Install libnghhtp2
 git clone https://github.com/nghttp2/nghttp2
@@ -22,7 +24,7 @@ make
 make install
 
 # 3- Install libcurl and curl
-###cd /staging
+cd $BUILD_DIR
 wget https://curl.haxx.se/download/curl-7.51.0.tar.gz
 tar -zxf curl-7.51.0.tar.gz
 cd curl-7.51.0
