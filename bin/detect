@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo “detect OK dayo”
+
+exit 0
