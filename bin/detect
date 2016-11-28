@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [[ -f $1/README.md ]]; then
   echo "OK dayo" && exit 0
