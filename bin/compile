@@ -10,7 +10,7 @@ echo "Hi dayo"
 echo $BUILD_DIR
 
 # 1- Configuration
-mkdir /staging && cd /staging
+mkdir -p /staging && cd /staging
 
 #apt-get build-dep --assume-yes curl
 
