@@ -4,7 +4,7 @@ set -e
 set -o pipefail
 
 # 1- Configuration
-mkdir /staging && cd /staging
+###mkdir /staging && cd /staging
 apt-get build-dep --assume-yes curl
 
 # 2- Install libnghhtp2
@@ -18,7 +18,7 @@ make
 make install
 
 # 3- Install libcurl and curl
-cd /staging
+###cd /staging
 wget https://curl.haxx.se/download/curl-7.51.0.tar.gz
 tar -zxf curl-7.51.0.tar.gz
 cd curl-7.51.0
@@ -28,5 +28,5 @@ make install
 ldconfig
 
 # 4- Cleanup
-cd / && rm -rf /staging
+###cd / && rm -rf /staging
 
